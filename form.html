@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header--form">
+            <div class="user-nav-wrapper">
+                <a href="#" class="header__logo-link">
+                    <picture>
+                        <source srcset="./images/index/head/desktop/header-logo.png" alt="" class="header-logo header-logo--desktop" width="147px" height="40px" media="(min-width: 1200px)">
+                        <source srcset="./images/index/head/tablet/header-logo.png" alt="" class="header-logo header-logo--tablet" width="147px" height="40px" media="(min-width: 660px)">
+                        <source srcset="./images/index/head/mobile/header-logo.png" alt="" class="header-logo header-logo--mobile" width="75px" height="22px">
+                        <img srcset="./images/index/head/mobile/header-logo.png" width="75px" height="22px" alt="My default image">
+                    </picture>
+                </a>
+                <div class="burger-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+                    </svg>
+                </div>
+                <nav class="main-nav">
+                    <div class="nav-container">
+                        <ul class="nav__items">
+                            <div class="close-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+                                </svg>
+                            </div>
+                            <a href="./index.html" class="nav__item-link">
+                                <li class="nav__item nav__item-active">Главная</li>
+                            </a>
+                            <a href="./form.html" class="nav__item-link">
+                                <li class="nav__item">Фотографии</li>
+                            </a>
+                            <a href="./photo.html" class="nav__item-link">
+                                <li class="nav__item">Конкурс</li>
+                            </a>
+                            </a>
+                            <a href="achievements.html" class="nav__item-link">
+                                <li class="nav__item">HTML Academy</li>
+                            </a>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <h4 class="title header__form-title">Конкурс на самое безбашенное путешествие с Пинк</h4>
+        </header>
+        <main>
+            <form class="contest-feedback">
+                <div class="contest-feedback__title-block contest-feedback__container">
+                    <h4 class="contest-feedback__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+                        <div class="contest-feedback__display-block display-none">Пожалуйста, заполните форму ниже:</div>
+                    </h4>
+                </div>
+
+                <div class="contest-feedback__flex-container">
+                    <div class="contest-feedback__user-info contest-feedback__container">
+                        <div class="user-info__container">
+                            <label for="user-info__input" class="user-info__label">ФАМИЛИЯ:</label>
+                            <input type="text" id="user-info__input" name="user-info__surname" placeholder="Укажите фамилию*" class="js-input user-info__input-form user-info__input-surname">
+                        </div>
+                        <div class="user-info__container">
+                            <label for="user-info__input" class="user-info__label">ИМЯ:</label>
+                            <input type="text" id="user-info__input" name="user-info__name" placeholder="Введите ваше имя*" class="js-input user-info__input-form user-info__input-name">
+                        </div>
+                        <div class="user-info__container">
+                            <label for="user-info__input" class="user-info__label">ОТЧЕСТВО:</label>
+                            <input type="text" id="user-info__input" name="user-info__middle-name" placeholder="Ну и отчество тоже*" class="js-input user-info__input-form user-info__input-middle-name">
+                        </div>
+                    </div>
+
+                    <div class="contest-feedback__background-color contest-feedback__pink-app-container">
+                        <fieldset class="contest-feedback__pink-app contest-feedback__container">
+                            <legend class="pink-app__title">С каким приложением путешествовали?</legend>
+                            <div class="pink-app__radios">
+                                <div class="radios">
+                                    <input id="radio--1" type="radio" name="pink-app__radio" value="radio-IOS" class="js-radio" checked>
+                                    <label for="radio--1">Pink для IOS</label>
+                                </div>
+                                <div class="radios">
+                                    <input id="radio--2" type="radio" name="pink-app__radio" value="radio-Android" class="js-radio">
+                                    <label for="radio--2">Pink на Android</label>
+                                </div>
+                                <div class="radios">
+                                    <input id="radio--3" type="radio" name="pink-app__radio" value="radio-Phone" class="js-radio">
+                                    <label for="radio--3">Windows Phone</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <div class="contest-feedback__background-color contest-feedback__achievements-container">
+                    <fieldset class="contest-feedback__achievements contest-feedback__container">
+                        <legend class="achievements__title">Ваши безбашенные достижения в путешествии</legend>
+                        <div class="achievements__checkboxes">
+                            <label class="checkboxes">
+                            <input type="checkbox" name="checkbox-selfi" checked class="js-checkbox">
+                            <span>Сделал селфи с акулой</span>
+                        </label>
+                            <label class="checkboxes">
+                            <input type="checkbox" name="checkbox-beach" checked class="js-checkbox">
+                            <span>Обгорел на пляже</span>
+                        </label>
+                            <label class="checkboxes">
+                            <input type="checkbox" name="checkbox-norris" class="js-checkbox">
+                            <span>Видел Чака Норриса</span>
+                        </label>
+                            <label class="checkboxes">
+                            <input type="checkbox" name="checkbox-souvenir" class="js-checkbox">
+                            <span>Накупил сувениров</span>
+                        </label>
+                            <label class="checkboxes">
+                            <input type="checkbox" name="checkbox-tower" checked class="js-checkbox">
+                            <span>Удержал башню</span>
+                        </label>
+                            <label class="checkboxes">
+                            <input type="checkbox" name="checkbox-hotel" class="js-checkbox">
+                            <span>Разгромил отель</span>
+                        </label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <fieldset class="contest-feedback__contact-information contest-feedback__container">
+                    <legend class="contact-information__title">Контактная информация:</legend>
+                    <div class="contact-information__phone-number contact-information__container">
+                        <label for="contact-information__phone-number-input" class="contact-information__number-label user-contact-information__label">Номер телефона</label>
+                        <div class="contact-information__button-container">
+                            <input type="tel" id="contact-information__number-input" name="contact-information__number-name" placeholder="Номер, пожалуйста" pattern="[8]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" class="js-input contact-information__number-input-form contact-information__input-form">
+                            <button type="button" class="contact-information__phone-button contact-information__button" id="phone-icon"></button>
+                        </div>
+                    </div>
+                    <div class="contact-information__email contact-information__container">
+                        <label for="contact-information__input" class="contact-information__email-label user-contact-information__label">Адрес почты</label>
+                        <div class="contact-information__button-container">
+                            <input type="email" id="contact-information__input" name="contact-information__name" placeholder="Введите почту *" class="js-input contact-information__email-input-form contact-information__input-form">
+                            <button type="button" class="contact-information__email-button contact-information__button" id="email-icon"></button>
+                        </div>
+                    </div>
+                </fieldset>
+
+
+                <div class="contest-feedback__emotions contest-feedback__container">
+                    <fieldset class="emotions__textarea-feedback__container">
+                        <legend class="emotions__title">Опишите свои эмоции:</legend>
+                        <textarea id="emotions__textarea" name="emotions__textarea-name" placeholder="Можно прям в красках, не стесняясь в выражениях" class="js-input emotions__textarea"></textarea>
+                    </fieldset>
+                    <div class="emotion__container">
+                        <input class="js-input emotions__button" type="submit" name="emotions__button" value="ОТПРАВИТЬ ФОРМУ">
+                        <span class="emotions__text">* — обязательные поля</span>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <footer class="footer">
+            <div class="footer__bottom footer__form">
+                <div class="footer-visit footer__bottom-item">
+                    <picture>
+                        <source srcset="./images/index/foot/desktop/pink_logo.png" alt="" class="pink-logo pink-logo--desktop" width="147px" height="40px" media="(min-width: 1200px)">
+                        <source srcset="./images/index/foot/tablet/pink_logo.png" alt="" class="pink-logo pink-logo--tablet" width="147px" height="40px">
+                        <img srcset="./images/index/foot/desktop/pink_logo.png" alt="" class="pink-logo" width="147px" height="40px">
+                    </picture>
+                </div>
+                <div class="footer__social footer__bottom-item">
+                    <a class="social__btn social__btn-tw" href="#"></a>
+                    <a class="social__btn social__btn-fb" href="#"></a>
+                    <a class="social__btn social__btn-yt" href="#"></a>
+                </div>
+                <div class="htmlacademy__logo footer__bottom-item">
+                    <span>Разработано</span>
+                    <a href="" class="htmlacademy__link">
+                        <img src="./images/index/foot/desktop/logo_name.png" alt="" class="footer__logo" width="27px" height="34px">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/form.js"></script>
+</body>
+
+</html>
